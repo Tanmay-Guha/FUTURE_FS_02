@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="api-base-url" content="http://localhost:3001">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Search city...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="location-btn" class="location-btn"><i class="fas fa-location-crosshairs"></i></button>
+            </div>
+            
+            <div class="favorites-container">
+                <h3><i class="fas fa-star"></i> Favorite Cities</h3>
+                <div class="favorites-list" id="favorites-list">
+                    <div class="no-favorites">No favorite cities yet</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="weather-card">
+                <div class="current-weather">
+                    <div class="weather-header">
+                        <h2 id="city-name">Search for a city</h2>
+                        <div id="current-date" class="current-date">--</div>
+                    </div>
+                    
+                    <div class="weather-main">
+                        <div class="temperature-container">
+                            <div id="temperature" class="temperature">--<span>°C</span></div>
+                            <div id="weather-description" class="weather-description">--</div>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <span>Humidity</span>
+                                <span id="humidity">--%</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <span>Wind</span>
+                                <span id="wind">-- m/s</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <span>Pressure</span>
+                                <span id="pressure">-- hPa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forecast-section">
+                    <h3><i class="fas fa-calendar-alt"></i> 5-Day Forecast</h3>
+                    <div class="forecast-container" id="forecast-container">
+                        <div class="no-forecast">
+                            <i class="fas fa-search-location"></i>
+                            <p>Search for a city to see forecast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

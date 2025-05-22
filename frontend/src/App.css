@@ -1,0 +1,69 @@
+.weather-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.weather-card {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.weather-main {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.weather-details {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.favorites-section {
+  margin: 1rem 0;
+}
+
+.favorites-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.forecast-section {
+  margin-top: 2rem;
+}
+
+.forecast-card {
+  height: 100%;
+  text-align: center;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.max-temp {
+  color: #f44336;
+}
+
+.min-temp {
+  color: #2196f3;
+}
